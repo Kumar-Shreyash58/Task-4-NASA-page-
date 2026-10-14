@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 const API = "https://images-api.nasa.gov";
 export default function ImageDetails() {
   const { nasaId } = useParams();

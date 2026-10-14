@@ -42,7 +42,7 @@ a { color: inherit; }
   margin: auto;
   padding: 0 5%;
 }
-.Navbar {
+.navbar {
   min-height: 78px;
   display: flex;
   justify-content: space-between;
@@ -315,7 +315,7 @@ a { color: inherit; }
   font-size: 11px;
   line-height: 1.8;
 }
-.details-page .Navbar { margin-bottom: 24px; }
+.details-page .navbar { margin-bottom: 24px; }
 .back-link { color: #bdc9df; text-decoration: none; font-size: 13px; }
 .back-link:hover { color: var(--cyan); }
 .details-status { padding: 80px 10px; text-align: center; color: #bdc9df; }

@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 export default function ImageCard({ item }) {
   const info = item.data?.[0];
   const url = item.links?.find(l => l.render === "image")?.href;
+
   if (!info?.nasa_id || !url) return null;
+
   const date = info.date_created
     ? new Date(info.date_created).toLocaleDateString()
     : "Date unavailable";
+
   return (
     <Link to={`/image/${encodeURIComponent(info.nasa_id)}`} className="image-card">
       <div className="image-wrap flip-card">

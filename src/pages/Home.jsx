@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useImages } from "../context/ImageContext";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import SearchBar from "../components/SearchBar";
 import ImageCard from "../components/ImageCard";
 import Pagination from "../components/Pagination";
@@ -30,7 +30,6 @@ export default function Home() {
           setSearchText={setSearchText}
           onSearch={term => {
             setSearchText(term);
-            fetchImages(term, 1);
           }}
         />
       </section>
